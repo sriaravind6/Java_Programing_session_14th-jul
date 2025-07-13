@@ -1,3 +1,45 @@
 ===================================*************   Day 1 Class Notes     *****************===================================
 
 Notes:-
+    Topic: Introduction to Programming
+           Class , Method , Variable / Object
+           Same Package , Different Packages
+           Importing Package
+           Oops Concept Object Oriented Programming Structure
+           (Encapsulation, Inheritance, Polymorphism , Abstraction)
+
+     Introduction to Programming :-
+          JDK = JVM +  JRE
+          JDK = Java Development Kit, JVM = Java Virtual Machine, JRE = Java Runtime Environment
+            JDK is a software development kit used to develop Java applications.
+            JVM is an abstract machine that provides the runtime environment to execute Java bytecode.
+            JRE is a part of JDK that provides the libraries and other components to run Java applications.
+
+     Class , Method , Variable / Object :-
+        Project Name: Declaration type Title case
+        Package Name: Declaration type lower case
+        Class Name: Declaration type Title case
+        Method Name: Declaration type Camel case
+        Variable Name: Declaration type Camel case
+        Object Name: Declaration type Camel case
+
+     About Project, Package, Class,Method, Variable/Object:
+        - Project: A collection of related classes and resources.
+        - Package: A namespace that organizes a set of related classes and interfaces.
+        - Class: A blueprint for creating objects, defining properties and behaviors.
+        - Method: A function defined within a class that describes the behavior of the objects.
+        - Variable/Object: Variables are used to store data, and objects are instances of classes.
+
+     Same Package , Different Packages
+        - Same Package: Classes within the same package can access each other's members (variables and methods) directly.
+        - Different Packages: Classes in different packages need to import the package to access its members.
+
+     Importing Package:
+        - To use classes from another package, you need to import that package using the `import` statement.
+        - Example: `import java.util.Scanner;` allows you to use the Scanner class from the java.util package.
+
+     Oops Concept Object Oriented Programming Structure:
+        - Inheritance: Mechanism where one class can inherit fields and methods from another class, promoting code reuse.
+        - Polymorphism: Ability of different classes to be treated as instances of the same class through a common interface. It allows methods to do different things based on the object it is acting upon.
+        - Abstraction: Hiding complex implementation details and showing only the essential features of an object. It helps in reducing programming complexity and effort.
+        - Encapsulation: Bundling data (variables) and methods that operate on the data into a single unit (class). It restricts direct access to some of the object's components.
