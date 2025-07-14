@@ -1,4 +1,4 @@
-package daily_class_for_java;
+package daily_class_for_java.firstdayclass;
 
 public class First_Day_JavaClass2 {
     public static void main(String[] args){

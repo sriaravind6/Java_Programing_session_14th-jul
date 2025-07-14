@@ -120,3 +120,9 @@ Notes:-
                 Class1 class1 = new Class1();
                 class1.methodName();
      Note Access modifire is private then it is accessed by same class only
+
+===================================*************   Day 2 Class Notes     *****************===================================
+     Topic:    import the package from different package
+               Inheritance
+               Method Overloading
+               Method Overriding
