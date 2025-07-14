@@ -5,7 +5,7 @@ Notes:-
            Class , Method , Variable / Object
            Same Package , Different Packages
            Importing Package
-           Oops Concept Object Oriented Programming Structure
+           Oops Concept Object-Oriented Programming Structure
            (Encapsulation, Inheritance, Polymorphism , Abstraction)
 
      Introduction to Programming :-
@@ -38,8 +38,85 @@ Notes:-
         - To use classes from another package, you need to import that package using the `import` statement.
         - Example: `import java.util.Scanner;` allows you to use the Scanner class from the java.util package.
 
-     Oops Concept Object Oriented Programming Structure:
+     Oops Concept Object-Oriented Programming Structure:
         - Inheritance: Mechanism where one class can inherit fields and methods from another class, promoting code reuse.
         - Polymorphism: Ability of different classes to be treated as instances of the same class through a common interface. It allows methods to do different things based on the object it is acting upon.
         - Abstraction: Hiding complex implementation details and showing only the essential features of an object. It helps in reducing programming complexity and effort.
         - Encapsulation: Bundling data (variables) and methods that operate on the data into a single unit (class). It restricts direct access to some of the object's components.
+
+1. School =====> (Project)
+        Class 1st   ========> (Package)
+            Section A  =======> (Class)
+                    Teacher: Mr. A  =======> (Object)
+                    Students:
+                        - Student 1 =======> (Method)
+                                Reading 
+                                Writing
+                                Playing  ===> (Actions)
+                        - Student 2
+                        - Student 3
+            Section B
+                    Teacher: Mr. B
+                    Students:
+                        - Student 4
+                        - Student 5
+                        - Student 6
+            Section C
+                    Teacher: Mr. C
+                    Students:
+                        - Student 7
+                        - Student 8
+                        - Student 9
+        Class 2nd
+            Section A
+                Teacher: Mr. A
+                                    Students:
+                                        - Student 1
+                                        - Student 2
+                                        - Student 3
+            Section B
+                Teacher: Mr. B
+                                    Students:
+                                        - Student 4
+                                        - Student 5
+                                        - Student 6
+            Section C
+                Teacher: Mr. C
+                                    Students:
+                                        - Student 7
+                                        - Student 8
+                                        - Student 9
+        Class 3rd
+            Section A
+               Teacher: Mr. A
+                                   Students:
+                                       - Student 1
+                                       - Student 2
+                                       - Student 3
+            Section B
+                Teacher: Mr. B
+                                      Students:
+                                        - Student 4
+                                        - Student 5
+                                        - Student 6
+            Section C
+                Teacher: Mr. C
+                                      Students:
+                                        - Student 7
+                                        - Student 8
+                                        - Student 9
+
+2. With-out main class we can not run the program. and we can not change the main method syntax.
+            public static void main(String[] args){
+
+               }
+3. Object creation syntax:
+            ClassName objectName = new ClassName();
+            Example:
+                Student student1 = new Student();
+
+4. We can access the one class method to anthor class in same package the method should be in public (access modifier).
+            Example:
+                Class1 class1 = new Class1();
+                class1.methodName();
+     Note Access modifire is private then it is accessed by same class only
