@@ -68,8 +68,8 @@
    Run:mvn -version
    Should display Maven version.
    
-# if any doubt to install please follow this video to understand :- 
-         https://www.youtube.com/watch?v=R6MoDMASwag  (java installation video )
+# if any doubt to install please follow this video to understand to install java:- 
+         https://www.youtube.com/watch?v=R6MoDMASwag
 
 # First Day Java Programme topic are :- Introduction to Programming
           # Class , Method , Variable / Object
