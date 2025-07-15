@@ -126,3 +126,68 @@ Notes:-
                Inheritance
                Method Overloading
                Method Overriding
+
+
+     Inheritance:
+        - Inheritance allows a new class (subclass) to inherit properties and behaviors (fields and methods) from an existing class (superclass).
+        - Syntax: `class SubClass extends SuperClass { }`
+        - Example:
+            ```java
+            class Animal {
+                void eat() {
+                    System.out.println("Animal is eating");
+                }
+            }
+
+            class Dog extends Animal {
+                void bark() {
+                    System.out.println("Dog is barking");
+                }
+            }
+            ```
+  Parent  child1 child2 child3
+
+    child1    extends parent
+    child2    extends parent
+    child3    extends parent
+
+     Method Overloading:
+        - Method overloading allows multiple methods in the same class to have the same name but different parameters (different type, number, or order of parameters).
+        - Example:
+            ```java
+            class MathOperations {
+                int add(int a, int b) {
+                    return a + b;
+                }
+
+                double add(double a, double b) {
+                    return a + b;
+                }
+            }
+            ```
+
+     Method Overriding:
+        - Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
+        - Syntax: `@Override` annotation is used before the method definition in the subclass.
+        - Example:
+            ```java
+            class Animal {
+                void sound() {
+                    System.out.println("Animal makes sound");
+                }
+            }
+
+            class Dog extends Animal {
+                @Override
+                void sound() {
+                    System.out.println("Dog barks");
+                }
+            }
+            ```
+
+     Importing Packages from Different Packages:
+        - To use classes from another package, you need to import that package using the `import` statement.
+        - Example: `import java.util.ArrayList;` allows you to use the ArrayList class from the java.util package.
+
+        Method orverloading means same class same method diffeternt parameter
+        Method orverriding means same method same parameter but different class
