@@ -189,5 +189,580 @@ Notes:-
         - To use classes from another package, you need to import that package using the `import` statement.
         - Example: `import java.util.ArrayList;` allows you to use the ArrayList class from the java.util package.
 
-        Method orverloading means same class same method diffeternt parameter
+        Method orverloading means same class same method different parameter
         Method orverriding means same method same parameter but different class
+        
+===================================*************   Day 3 Class Notes     *****************===================================
+     Topic:    Data Types
+               Scanner Class
+    
+        DataTypes: Data types in Java are used to define the type of data that can be stored and manipulated within a program. 
+                   They determine the size and type of data that can be stored in a variable.
+        
+        DataTypes: Data types in Java are divided into two categories:
+            1. Primitive Data Types: These are the basic data types provided by Java.
+                - byte: 8-bit signed integer 
+                        default value is 0 
+                        range from -128 to 127
+                        Declearation: `byte b = 10;`
+                        How to convert byte to int:
+                        ```java
+                        byte b = 10;
+                        int i = b; // Implicit convertsion from byte to int
+                        System.out.println("Byte to Int: " + i);
+                        ```
+                        How to convert byte to short:
+                        ```java
+                        byte b = 10;
+                        short s = b; // Implicit convertsion from byte to short
+                        System.out.println("Byte to Short: " + s);
+                        ```
+                        How to convert byte to long:
+                        ```java
+                        byte b = 10;
+                        long l = b; // Implicit convertsion from byte to long
+                        System.out.println("Byte to Long: " + l);
+                        ```
+                        How to convert byte to float:
+                        ```java
+                        byte b = 10;
+                        float f = b; // Implicit convertsion from byte to float
+                        System.out.println("Byte to Float: " + f);
+                        ```
+                        How to convert byte to double:
+                        ```java
+                        byte b = 10;
+                        double d = b; // Implicit convertsion from byte to double
+                        System.out.println("Byte to Double: " + d);
+                        ```
+                        How to convert byte to char:
+                        ```java
+                        byte b = 65; // ASCII value for 'A'
+                        char c = (char) b; // Explicit convertsion from byte to char
+                        System.out.println("Byte to Char: " + c);
+                        ```
+                        How to convert byte to boolean:
+                        ```java
+                        byte b = 1; // 1 is considered true
+                        boolean boolValue = (b != 0); // Implicit convertsion from byte to boolean
+                        System.out.println("Byte to Boolean: " + boolValue);
+                        ```
+                        How to convert byte to String:
+                        ```java
+                        byte b = 10;
+                        String str = Byte.toString(b); // convertt byte to String
+                        System.out.println("Byte to String: " + str);
+                        ```
+                - short: 16-bit signed integer 
+                        default value is 0 
+                        range from -32,768 to 32,767
+                        Declearation: `short s = 1000;`
+                        How to convert short to int:
+                        ```java
+                        short s = 1000;
+                        int i = s; // Implicit convertsion from short to int
+                        System.out.println("Short to Int: " + i);
+                        ```
+                        How to convert short to byte:
+                        ```java
+                        short s = 100;
+                        byte b = (byte) s; // Explicit convertsion from short to byte
+                        System.out.println("Short to Byte: " + b);
+                        ```
+                        How to convert short to long:
+                        ```java
+                        short s = 1000;
+                        long l = s; // Implicit convertsion from short to long
+                        System.out.println("Short to Long: " + l);
+                        ```
+                        How to convert short to float:
+                        ```java
+                        short s = 1000;
+                        float f = s; // Implicit convertsion from short to float
+                        System.out.println("Short to Float: " + f);
+                        ```
+                        How to convert short to double:
+                        ```java
+                        short s = 1000;
+                        double d = s; // Implicit convertsion from short to double
+                        System.out.println("Short to Double: " + d);
+                        ```
+                        How to convert short to char:
+                        ```java
+                        short s = 65; // ASCII value for 'A'
+                        char c = (char) s; // Explicit convertsion from short to char
+                        System.out.println("Short to Char: " + c);
+                        ```
+                        How to convert short to boolean:
+                        ```java
+                        short s = 1; // 1 is considered true
+                        boolean boolValue = (s != 0); // Implicit convertsion from short to boolean
+                        System.out.println("Short to Boolean: " + boolValue);
+                        ```
+                        How to convert short to String:
+                        ```java
+                        short s = 1000;
+                        String str = Short.toString(s); // convertt short to String
+                        System.out.println("Short to String: " + str);
+                        ```
+                - int: 32-bit signed integer 
+                        default value is 0 
+                        range from -2,147,483,648 to 2,147,483,647
+                        Declearation: `int i = 100000;`
+                        How to convert int to byte:
+                        ```java
+                        int i = 100;
+                        byte b = (byte) i; // Explicit convertsion from int to byte
+                        System.out.println("Int to Byte: " + b);
+                        ```
+                        How to convert int to short:
+                        ```java
+                        int i = 1000;
+                        short s = (short) i; // Explicit convertsion from int to short
+                        System.out.println("Int to Short: " + s);
+                        ```
+                        How to convert int to long:
+                        ```java
+                        int i = 100000;
+                        long l = i; // Implicit convertsion from int to long
+                        System.out.println("Int to Long: " + l);
+                        ```
+                        How to convert int to float:
+                        ```java
+                        int i = 1000;
+                        float f = i; // Implicit convertsion from int to float
+                        
+                        System.out.println("Int to Float: " + f);
+                        ```
+                        How to convert int to double:
+                        ```java
+                        int i = 1000;
+                        double d = i; // Implicit convertsion from int to double
+                        System.out.println("Int to Double: " + d);
+                        ```
+                        How to convert int to char:
+                        ```java
+                        int i = 65; // ASCII value for 'A'
+                        char c = (char) i; // Explicit convertsion from int to char
+                        System.out.println("Int to Char: " + c);
+                        ```
+                        How to convert int to boolean:
+                        ```java
+                        int i = 1; // 1 is considered true
+                        boolean boolValue = (i != 0); // Implicit convertsion from int to boolean
+                        System.out.println("Int to Boolean: " + boolValue);
+                        ```
+                        How to convert int to String:
+                        ```java
+                        int i = 100000;
+                        String str = Integer.toString(i); // convertt int to String
+                        System.out.println("Int to String: " + str);
+                        ```
+                - long: 64-bit signed integer  
+                        default value is 0L 
+                        range from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+                        Declearation: `long l = 100000L;`
+                        How to convert long to byte:
+                        ```java
+                        long l = 100;
+                        byte b = (byte) l; // Explicit convertsion from long to byte
+                        System.out.println("Long to Byte: " + b);
+                        ```
+                        How to convert long to short:
+                        ```java
+                        long l = 1000;
+                        short s = (short) l; // Explicit convertsion from long to short
+                        System.out.println("Long to Short: " + s);
+                        ```
+                        How to convert long to int:
+                        ```java
+                        long l = 100000;
+                        int i = (int) l; // Explicit convertsion from long to int
+                        System.out.println("Long to Int: " + i);
+                        ```
+                        How to convert long to float:
+                        ```java
+                        long l = 1000;
+                        float f = l; // Implicit convertsion from long to float
+                        System.out.println("Long to Float: " + f);
+                        ```
+                        How to convert long to double:
+                        ```java
+                        long l = 1000;
+                        double d = l; // Implicit convertsion from long to double
+                        System.out.println("Long to Double: " + d);
+                        ```
+                        How to convert long to char:
+                        ```java
+                        long l = 65; // ASCII value for 'A'
+                        char c = (char) l; // Explicit convertsion from long to char
+                        System.out.println("Long to Char: " + c);
+                        ```
+                        How to convert long to boolean:
+                        ```java
+                        long l = 1; // 1 is considered true
+                        boolean boolValue = (l != 0); // Implicit convertsion from long to boolean
+                        System.out.println("Long to Boolean: " + boolValue);
+                        ```
+                        How to convert long to String:
+                        ```java
+                        long l = 100000L;
+                        String str = Long.toString(l); // convertt long to String
+                        System.out.println("Long to String: " + str);
+                        ```
+                - float: 32-bit floating-point number 
+                        default value is 0.0f 
+                        range from approximately -3.40282347E+38 to 3.40282347E+38
+                        Declearation: `float f = 10.5f;`
+                        How to convert float to byte:
+                        ```java
+                        float f = 100.5f;
+                        byte b = (byte) f; // Explicit convertsion from float to byte
+                        System.out.println("Float to Byte: " + b);
+                        ```
+                        How to convert float to short:
+                        ```java
+                        float f = 1000.5f;
+                        short s = (short) f; // Explicit convertsion from float to short
+                        System.out.println("Float to Short: " + s);
+                        ```
+                        How to convert float to int:
+                        ```java
+                        float f = 100000.5f;
+                        int i = (int) f; // Explicit convertsion from float to int
+                        System.out.println("Float to Int: " + i);
+                        ```
+                        How to convert float to long:
+                        ```java
+                        float f = 1000.5f;
+                        long l = (long) f; // Explicit convertsion from float to long
+                        System.out.println("Float to Long: " + l);
+                        ```
+                        How to convert float to double:
+                        ```java
+                        float f = 1000.5f;
+                        double d = f; // Implicit convertsion from float to double
+                        System.out.println("Float to Double: " + d);
+                        ```
+                        How to convert float to char:
+                        ```java
+                        float f = 65.0f; // ASCII value for 'A'
+                        char c = (char) f; // Explicit convertsion from float to char
+                        System.out.println("Float to Char: " + c);
+                        ```
+                        How to convert float to boolean:
+                        ```java
+                        float f = 1.0f; // 1.0 is considered true
+                        boolean boolValue = (f != 0.0f); // Implicit convertsion from float to boolean
+                        System.out.println("Float to Boolean: " + boolValue);
+                        ```
+                        How to convert float to String:
+                        ```java
+                        float f = 10.5f;
+                        String str = Float.toString(f); // convert float to String
+                - double: 64-bit floating-point number 
+                        default value is 0.0d 
+                        range from approximately -1.79769313486231570E+308 to 1.79769313486231570E+308
+                        Declearation: `double d = 20.5d;`
+                        How to convert double to byte:
+                        ```java
+                        double d = 100.5;
+                        byte b = (byte) d; // Explicit convertsion from double to byte
+                        System.out.println("Double to Byte: " + b);
+                        ```
+                        How to convert double to short:
+                        ```java
+                        double d = 1000.5;
+                        short s = (short) d; // Explicit convertsion from double to short
+                        System.out.println("Double to Short: " + s);
+                        ```
+                        How to convert double to int:
+                        ```java
+                        double d = 100000.5;
+                        int i = (int) d; // Explicit convertsion from double to int
+                        System.out.println("Double to Int: " + i);
+                        ```
+                        How to convert double to long:
+                        ```java
+                        double d = 1000.5;
+                        long l = (long) d; // Explicit convertsion from double to long
+                        System.out.println("Double to Long: " + l);
+                        ```
+                        How to convert double to float:
+                        ```java
+                        double d = 1000.5;
+                        float f = (float) d; // Explicit convertsion from double to float
+                        System.out.println("Double to Float: " + f);
+                        ```
+                        How to convert double to char:
+                        ```java
+                        double d = 65.0; // ASCII value for 'A'
+                        char c = (char) d; // Explicit convertsion from double to char
+                        System.out.println("Double to Char: " + c);
+                        ```
+                        How to convert double to boolean:
+                        ```java
+                        double d = 1.0; // 1.0 is considered true
+                        boolean boolValue = (d != 0.0); // Implicit convertsion from double to boolean
+                        System.out.println("Double to Boolean: " + boolValue);
+                        ```
+                        How to convert double to String:
+                        ```java
+                        double d = 20.5d;
+                        String str = Double.toString(d); // convert double to String
+                        System.out.println("Double to String: " + str);
+                        ```
+                - char: single 16-bit Unicode character 
+                        default value is '\u0000' 
+                        range from '\u0000' to '\uffff'
+                        Declearation: `char c = 'A';`
+                        How to convert char to byte:
+                        ```java
+                        char c = 'A';
+                        byte b = (byte) c; // Explicit convertsion from char to byte
+                        System.out.println("Char to Byte: " + b);
+                        ```
+                        How to convert char to short:
+                        ```java
+                        char c = 'A';
+                        short s = (short) c; // Explicit convertsion from char to short
+                        System.out.println("Char to Short: " + s);
+                        ```
+                        How to convert char to int:
+                        ```java
+                        char c = 'A';
+                        int i = (int) c; // Explicit convertsion from char to int
+                        System.out.println("Char to Int: " + i);
+                        ```
+                        How to convert char to long:
+                        ```java
+                        char c = 'A';
+                        long l = (long) c; // Explicit convertsion from char to long
+                        System.out.println("Char to Long: " + l);
+                        ```
+                        How to convert char to float:
+                        ```java
+                        char c = 'A';
+                        float f = (float) c; // Explicit convertsion from char to float
+                        System.out.println("Char to Float: " + f);
+                        ```
+                        How to convert char to double:
+                        ```java
+                        char c = 'A';
+                        double d = (double) c; // Explicit convertsion from char to double
+                        System.out.println("Char to Double: " + d);
+                        ```
+                        How to convert char to boolean:
+                        ```java
+                        char c = 'A'; // 'A' is considered true
+                        boolean boolValue = (c != '\u0000'); // Implicit convertsion from char to boolean
+                        System.out.println("Char to Boolean: " + boolValue);
+                        ```
+                        How to convert char to String:
+                        ```java
+                        char c = 'A';
+                        String str = Character.toString(c); // convert char to String
+                        System.out.println("Char to String: " + str);
+                        ```
+                - boolean: true or false 
+                        default value is false 
+                        range is true or false
+                        Declearation: `boolean b = true;`
+                        How to convert boolean to byte:
+                        ```java
+                        boolean b = true;
+                        byte byteValue = (byte) (b ? 1 : 0); // Implicit convertsion from boolean to byte
+                        System.out.println("Boolean to Byte: " + byteValue);
+                        ```
+                        How to convert boolean to short:
+                        ```java
+                        boolean b = true;
+                        short shortValue = (short) (b ? 1 : 0); // Implicit convertsion from boolean to short
+                        System.out.println("Boolean to Short: " + shortValue);
+                        ```
+                        How to convert boolean to int:
+                        ```java
+                        boolean b = true;
+                        int intValue = b ? 1 : 0; // Implicit convertsion from boolean to int
+                        System.out.println("Boolean to Int: " + intValue);
+                        ```
+                        ```
+                        How to convert boolean to long:
+                        ```java
+                        boolean b = true;
+                        long longValue = b ? 1L : 0L; // Implicit convertsion from boolean to long
+                        System.out.println("Boolean to Long: " + longValue);
+                        ```
+                        How to convert boolean to float:
+                        ```java
+                        boolean b = true;
+                        float floatValue = b ? 1.0f : 0.0f; // Implicit convertsion from boolean to float
+                        System.out.println("Boolean to Float: " + floatValue);
+                        ```
+                        How to convert boolean to double:
+                        ```java
+                        boolean b = true;
+                        double doubleValue = b ? 1.0 : 0.0; // Implicit convertsion from boolean to double
+                        System.out.println("Boolean to Double: " + doubleValue);
+                        ```
+                        How to convert boolean to char:
+                        ```java
+                        boolean b = true;
+                        char charValue = b ? 'T' : 'F'; // Implicit convertsion from boolean to char
+                        System.out.println("Boolean to Char: " + charValue);
+                        ```
+                        How to convert boolean to String:
+                        ```java
+                        boolean b = true;
+                        String str = Boolean.toString(b); // convert boolean to String
+                        System.out.println("Boolean to String: " + str);
+                        ```
+
+
+            2. Non-Primitive Data Types: These are more complex data types that are derived from primitive data types.
+                - String: A sequence of characters (not a primitive type, but widely used). 
+                          default value is null 
+                          range is any sequence of characters.
+                          String S = "Hello World";
+                          How to convert String to byte:
+                          ```java
+                            String str = "Hello";
+                            byte[] byteArray = str.getBytes(); // convert String to byte array
+                            System.out.println("String to Byte Array: " + Arrays.toString(byteArray));
+                            ```
+                          How to convert String to short:
+                            ```java
+                            String str = "1000";
+                            short shortValue = Short.parseShort(str); // convert String to short
+                            System.out.println("String to Short: " + shortValue);
+                            ```
+                          How to convert String to int:
+                            ```java
+                            String str = "100000";
+                            int intValue = Integer.parseInt(str); // convert String to int
+                            System.out.println("String to Int: " + intValue);
+                            ```
+                          How to convert String to long:
+                            ```java
+                            String str = "100000L";
+                            long longValue = Long.parseLong(str); // convert String to long
+                            System.out.println("String to Long: " + longValue);
+                            ```
+                          How to convert String to float:
+                            ```java
+                            String str = "10.5f";
+                            float floatValue = Float.parseFloat(str); // convert String to float
+                            System.out.println("String to Float: " + floatValue);
+                            ```
+                          How to convert String to double:
+                            ```java
+                            String str = "20.5d";
+                            double doubleValue = Double.parseDouble(str); // convert String to double
+                            System.out.println("String to Double: " + doubleValue);
+                            ```
+                          How to convert String to char:
+                            ```java
+                            String str = "A";
+                            char charValue = str.charAt(0); // convert String to char (first character)
+                            System.out.println("String to Char: " + charValue);
+                            ```
+                          How to convert String to boolean:
+                            ```java
+                            String str = "true";
+                            boolean boolValue = Boolean.parseBoolean(str); // convert String to boolean
+                            System.out.println("String to Boolean: " + boolValue);
+                            ```
+                - Arrays: A collection of elements of the same type. 
+                          default value is null 
+                          range is a fixed-size collection of elements.
+                          Int[] arr = new int[5]; // Array of integers with size 5
+                - Classes and Objects: User-defined data types. 
+                          default value is null 
+                          range is defined by the user. 
+                          public class  Student {              
+                              String name;
+                              int age;
+                          }  
+                            Student student1 = new Student(); // Creating an object of the Student class
+                          
+Scanner Class: The Scanner class in Java is used to read input from various sources, including user input from the console.
+               It is part of the java.util package and provides methods to read different types of data.
+               How to use the Scanner class:
+                1. Import the Scanner class:
+                    ```java
+                    import java.util.Scanner;
+                    ```
+                2. Create an instance of the Scanner class:
+                    ```java
+                    Scanner scanner = new Scanner(System.in);
+                    ```
+                3. Use methods to read input:
+                    - `nextInt()`: Reads an integer value.
+                        Example:
+                                            ```java
+                                            System.out.print("Enter an integer: ");
+                                            int number = scanner.nextInt();
+                                            System.out.println("You entered: " + number);
+                                            ```
+                    - `nextDouble()`: Reads a double value.
+                        Example:
+                                            ```java
+                                            System.out.print("Enter a double: ");
+                                            double decimal = scanner.nextDouble();
+                                            System.out.println("You entered: " + decimal);
+                                            ```
+                    - `nextLine()`: Reads a line of text (string).
+                        Example:
+                                            ```java
+                                            System.out.print("Enter a line of text: ");
+                                            String text = scanner.nextLine();
+                                            System.out.println("You entered: " + text);
+                                            ```
+                    - `next()`: Reads a single word (string).
+                        Example:
+                                            ```java
+                                            System.out.print("Enter a word: ");
+                                            String word = scanner.next();
+                                            System.out.println("You entered: " + word);
+                                            ```
+                    - `nextBoolean()`: Reads a boolean value.
+                        Example:
+                                            ```java
+                                            System.out.print("Enter true or false: ");
+                                            boolean boolValue = scanner.nextBoolean();
+                                            System.out.println("You entered: " + boolValue);
+                                            ```
+                    - `nextByte()`: Reads a byte value.
+                        Example:
+                                            ```java
+                                            System.out.print("Enter a byte value: ");
+                                            byte byteValue = scanner.nextByte();
+                                            System.out.println("You entered: " + byteValue);
+                                            ```
+                    - `nextShort()`: Reads a short value.
+                        Example:
+                                            ```java
+                                            System.out.print("Enter a short value: ");
+                                            short shortValue = scanner.nextShort();
+                                            System.out.println("You entered: " + shortValue);
+                                            ```
+                    - `nextLong()`: Reads a long value.
+                        Example:
+                                            ```java
+                                            System.out.print("Enter a long value: ");
+                                            long longValue = scanner.nextLong();
+                                            System.out.println("You entered: " + longValue);
+                                            ```
+                    - `nextFloat()`: Reads a float value.
+                        Example:
+                                            ```java
+                                            System.out.print("Enter a float value: ");
+                                            float floatValue = scanner.nextFloat();
+                                            System.out.println("You entered: " + floatValue);
+                                            ```
+                    
+                4. Close the Scanner when done to free up resources:
+                    ```java
+                    scanner.close();
+                    ```
+                                        
