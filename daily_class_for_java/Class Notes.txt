@@ -765,4 +765,131 @@ Scanner Class: The Scanner class in Java is used to read input from various sour
                     ```java
                     scanner.close();
                     ```
-                                        
+
+===================================*************   Day 4 Class Notes     *****************===================================
+         Topics: Access Modifiers
+                    public           Keyword
+                    private          Keyword
+                    protected        Keyword
+                    default          Keyword
+                    non-access Modifiers
+                    static           Keyword
+                    final            Keyword
+                    abstract         Keyword
+                    enum             Keyword
+                    interface        Keyword
+                    class            Keyword
+
+Access Modifiers: Access modifiers in Java are keywords that set the accessibility or visibility of classes, methods, and variables.
+                  They control where these elements can be accessed from within the code.
+1. public: The public access modifier allows the class, method, or variable to be accessible from any other class in any package.
+    - Example:
+      ```java
+      public class PublicClass {
+            public void publicMethod() {
+                 System.out.println("This is a public method.");
+            }
+      }
+      ```
+2. private: The private access modifier restricts the visibility of the class, method, or variable to within the same class only.
+    - Example:
+      ```java
+      public class PrivateClass {
+            private void privateMethod() {
+                 System.out.println("This is a private method.");
+            }
+      }
+      ```
+3. protected: The protected access modifier allows the class, method, or variable to be accessible within the same package and by subclasses in other packages.
+    - Example:
+      ```java
+      public class ProtectedClass {
+            protected void protectedMethod() {
+                 System.out.println("This is a protected method.");
+            }
+      }
+      ```
+4. default: If no access modifier is specified, the default access modifier is applied. It allows access only within the same package.
+    - Example:
+      ```java
+      class DefaultClass {
+            void defaultMethod() {
+                 System.out.println("This is a default method.");
+            }
+      }
+      ```
+5. non-access Modifiers: Non-access modifiers in Java are keywords that provide additional functionality or behavior to classes, methods, and variables.
+- static: The static modifier indicates that a method or variable belongs to the class itself rather than to instances of the class.
+    - Example:
+      ```java
+      public class StaticClass {
+            static int staticVariable = 10;
+
+            static void staticMethod() {
+                 System.out.println("This is a static method.");
+            }
+      }
+      ```
+6. final: The final modifier indicates that a class, method, or variable cannot be modified or overridden.
+    - Example:
+      ```java
+      public class FinalClass {
+            final int finalVariable = 20;
+
+            final void finalMethod() {
+                 System.out.println("This is a final method.");
+            }
+      }
+      ```
+7. abstract: The abstract modifier is used to declare a class or method that cannot be instantiated or must be implemented by subclasses.
+    - Example:
+      ```java
+      public abstract class AbstractClass {
+            abstract void abstractMethod(); // Abstract method without implementation
+      }
+
+      public class ConcreteClass extends AbstractClass {
+            @Override
+            void abstractMethod() {
+                 System.out.println("This is an implementation of the abstract method.");
+            }
+      }
+      ```
+8. enum: The enum modifier is used to define a set of named constants.
+    - Example:
+      ```java
+      public enum Day {
+            MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+      }
+
+      public class EnumExample {
+            public static void main(String[] args) {
+                 Day today = Day.MONDAY;
+                 System.out.println("Today is: " + today);
+            }
+      }
+      ```
+9. interface: The interface modifier is used to define a contract that classes can implement. It can contain abstract methods and constants.
+    - Example:
+      ```java
+      public interface Animal {
+            void makeSound(); // Abstract method
+      }
+
+      public class Dog implements Animal {
+            @Override
+            public void makeSound() {
+                 System.out.println("Woof!");
+            }
+      }
+
+      public class InterfaceExample {
+            public static void main(String[] args) {
+                 Animal dog = new Dog();
+                 dog.makeSound(); // Output: Woof!
+            }
+      }
+      ```
+
+
+
