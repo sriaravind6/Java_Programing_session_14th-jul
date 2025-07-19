@@ -772,7 +772,7 @@ Scanner Class: The Scanner class in Java is used to read input from various sour
                     private          Keyword
                     protected        Keyword
                     default          Keyword
-                    non-access Modifiers
+                 non-access Modifiers
                     static           Keyword
                     final            Keyword
                     abstract         Keyword
@@ -853,6 +853,10 @@ Access Modifiers: Access modifiers in Java are keywords that set the accessibili
             void abstractMethod() {
                  System.out.println("This is an implementation of the abstract method.");
             }
+
+            ConcreteClass obj = new ConcreteClass();
+            obj.abstractMethod(); // Output: This is an implementation of the abstract method.
+            }
       }
       ```
 8. enum: The enum modifier is used to define a set of named constants.
@@ -876,7 +880,7 @@ Access Modifiers: Access modifiers in Java are keywords that set the accessibili
             void makeSound(); // Abstract method
       }
 
-      public class Dog implements Animal {
+      public class Dog implements Animal,Thing {
             @Override
             public void makeSound() {
                  System.out.println("Woof!");
