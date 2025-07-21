@@ -126,6 +126,7 @@ Notes:-
                Inheritance
                Method Overloading
                Method Overriding
+               Is override annotation mandatory to use in java?
 
 
      Inheritance:
@@ -150,6 +151,12 @@ Notes:-
     child1    extends parent
     child2    extends parent
     child3    extends parent
+
+  Polymorphism:
+        - Polymorphism allows methods to do different things based on the object it is acting upon, even if they share the same name.
+        - There are two types of polymorphism:
+            1. Compile-time polymorphism (Method Overloading)
+            2. Runtime polymorphism (Method Overriding)
 
      Method Overloading:
         - Method overloading allows multiple methods in the same class to have the same name but different parameters (different type, number, or order of parameters).
