@@ -902,5 +902,10 @@ Access Modifiers: Access modifiers in Java are keywords that set the accessibili
       }
       ```
 
+===================================*************   Day 5 Class Notes     *****************===================================
+    Topic : Encapsulation
+
+      Encapsulation means hiding the variable and make the medthod and variable in single  unit.
+
 
 
