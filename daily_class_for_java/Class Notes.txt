@@ -907,5 +907,40 @@ Access Modifiers: Access modifiers in Java are keywords that set the accessibili
 
       Encapsulation means hiding the variable and make the medthod and variable in single  unit.
 
+===================================*************   Day 6 Class Notes     *****************===================================
+
+   Topics : Oprators in Java
+                ---> What is an Operator?
+                        An operator is a special symbol that performs operations on variables and values.
+                        Java has many types of operators, including arithmetic, relational, logical, bitwise, assignment, and more.
+
+             Different type of Operators :-
+                            1 Arithmetic     Operators
+                            2 Unary          Operators
+                            3 Relational     Operators
+                            4 Conditional    Operators
+                            5 Assignment     Operators
+
+                  1 Arithmetic Operators:
+                        These operators are used to perform basic mathematical operations.
+                        - Addition (+): Adds two operands.
+                            Example: `int sum = a + b;`
+                        - Subtraction (-): Subtracts the second operand from the first.
+                            Example: `int difference = a - b;`
+                        - Multiplication (*): Multiplies two operands.
+                            Example: `int product = a * b;`
+                        - Division (/): Divides the first operand by the second. If both operands are integers, it performs integer division.
+                            Example: `int quotient = a / b;`
+                        - Modulus (%): Returns the remainder of the division of the first operand by the second.
+                            Example: `int remainder = a % b;`
+
+                  Unary    Operators:
+                        These operators operate on a single operand.
+
+                        - Increment (++) : Increases the value of the operand by 1.
+                            Example: `a++;` or `++a;`
+                        - Decrement (--) : Decreases the value of the operand by 1.
+                            Example: `a--;` or `--a;`
+
 
 
