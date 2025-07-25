@@ -68,9 +68,6 @@ public class Operatorss {
 //        a--; //9-1 ==> 8 post-dec a =a-1
 //        System.out.println("Incremented value of a: " + a);
 
-        a= 20;
-        b= 20;
-
 //        System.out.println(a==b); //F
 //        System.out.println(a!=b); //T
 //        System.out.println(a>b); //F
@@ -85,15 +82,25 @@ public class Operatorss {
 
 
 //        a=a+5;
-        a += 5;// a = a + 5
-        System.out.println(a);
-        a-= 5; // a = a - 5
-        System.out.println(a);
-        a *= 5; // a = a * 5
-        System.out.println(a);
-        a /= 5; // a = a / 5
-        System.out.println(a);
-        a %= 5; // a = a % 5
-        System.out.println(a);
+//        a += 5;// a = a + 5
+//        System.out.println(a);
+//        a-= 5; // a = a - 5
+//        System.out.println(a);
+//        a *= 5; // a = a * 5
+//        System.out.println(a);
+//        a /= 5; // a = a / 5
+//        System.out.println(a);
+//        a %= 5; // a = a % 5
+//        System.out.println(a);
+
+        a= 20;
+        b= 20;
+
+//                20+22+22+22+22 = 108
+//        int k = a++ + ++a + a + a++ + --a;
+//                System.out.println(k);
+//        (20+20 ) - (19-18)
+        int k = (a++ + --a) - (--a - --a);
+        System.out.println(k +"           "+  a); // 20+19 - (18-17) = 20+19 - 1 = 38
     }
 }
