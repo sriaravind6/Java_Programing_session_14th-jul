@@ -9,7 +9,7 @@ import static java.util.Collections.sort;
 
 public class Arrayyys {
     public static void main(String[] args) {
-        int[] arr = {4,6,2,7,1,8};
+        int[] arr = {4, 6, 2, 7, 1, 8};
 
         // arr = {1,2,4,6,7,8};
 //        for (int i = 0; i < arr.length ; i++) {
@@ -20,24 +20,27 @@ public class Arrayyys {
 //                    arr[j] = temp;
 //                }
 //            }
-        arr[1] = 1000;
-        System.out.println(Arrays.toString(Arrays.stream(arr)
-                .sorted()
-                .toArray()));
-        List <Object> names = new ArrayList();
-        names.add("Java");
-        names.add(1);
-        names.add(0.1);
-
-        names.forEach(E -> System.out.print(E+"  "));
-        }
+//        arr[1] = 1000;
+//        System.out.println(Arrays.toString(Arrays.stream(arr)
+//                .sorted()
+//                .toArray()));
+//        List <Object> names = new ArrayList();
+//        names.add("Java");
+//        names.add(1);
+//        names.add(0.1);
+//
+//        names.forEach(E -> System.out.print(E+"  "));
+//        }
 
         //array ===> length / single data type
-    // arr[10] ===> arr[5] = 1000; =0 0 0
+        // arr[10] ===> arr[5] = 1000; =0 0 0
+        int[] array = new int[10];
+        for (int i = 0; i < array.length ; i++) {
+            array[i] = (i + 1)*10; // 1,2,3,4,5,6,7,8,9,10
+        }
+        System.out.println(Arrays.toString(array));
 
-
-
-
+    }
 
 
     }
