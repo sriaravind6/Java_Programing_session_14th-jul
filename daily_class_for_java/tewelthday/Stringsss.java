@@ -60,10 +60,10 @@ public class Stringsss {
 //        System.out.println(dummy);
 
 
-        String spacee = "H e l l o";
-        System.out.println(spacee.length());
-        System.out.println(spacee.indexOf(' '));
-        System.out.println(spacee.lastIndexOf(' '));
+//        String spacee = "H e l l o";
+//        System.out.println(spacee.length());
+//        System.out.println(spacee.indexOf(' '));
+//        System.out.println(spacee.lastIndexOf(' '));
 
 //        String s1 ="123456734890";
 //        if (s1.length()==10) {
@@ -72,16 +72,41 @@ public class Stringsss {
 //            System.out.println("Invalid");
 //        }
 //
-        System.out.println(spacee.replace(' ', '$'));
-        String s1 = "H E L L O";
-        String xxx ="";
-        for (int i = 0; i <s1.length() ; i++) {
-            if (s1.charAt(i)==' '&& i==5) {
-               xxx = xxx + '$';
+//        System.out.println(spacee.replace(' ', '$'));
+//        String s1 = "H E L L O";
+//        String xxx ="";
+//        for (int i = 0; i <s1.length() ; i++) {
+//            if (s1.charAt(i)==' '&& i==5) {
+//               xxx = xxx + '$';
+//            }
+//            xxx=xxx+ s1.charAt(i);
+//        }
+//        System.out.println(xxx);Ch
+        System.out.println( (int)'A'); // 65+1=66
+        System.out.println( (char) 66); // 65+1=66
+
+        String S1 = "Hello java programming";
+        System.out.println(S1.endsWith("programming"));
+
+        String S2 = "1234567890";
+        System.out.println(S2.matches("\\d+"));
+
+        String S3 = "dflgjkflgkjdfghdgdfgj1";
+        System.out.println(S3.matches("[a-zA-Z]+"));
+        boolean flag = true;
+        for (int i = 0; i <S3.length() ; i++) {
+            if(Character.isDigit(S3.charAt(i))){
+                flag= false;
+                break;
             }
-            xxx=xxx+ s1.charAt(i);
         }
-        System.out.println(xxx);
+        if (flag)
+            System.out.println("Given string does not contains digit: ");
+        else
+        System.out.println("Given string contains digit: ");
+
+
+
 
 //        JAYA    ARAV
 //        AJYA    RAVA
