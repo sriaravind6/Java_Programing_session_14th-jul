@@ -32,5 +32,13 @@ public class Lists {
         }
         System.out.println(list);
         System.out.println(list.reversed());
+
+        //prime number programe
+        int n = 37;
+        int count=0;
+        for (int i = 1; i <=n ; i++) {
+
+            count++;
+        }
     }
 }
